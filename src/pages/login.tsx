@@ -5,6 +5,10 @@ const Login: Component = () => {
   const [email, setEmail] = createSignal('');
   const [password, setPassword] = createSignal('');
 
+  const setData = () => {
+    console.log("email -> ", email())
+  }
+
   const handleSubmit = (e: Event) => {
     e.preventDefault();
     // Handle form submission logic here
@@ -44,7 +48,7 @@ const Login: Component = () => {
           <div class="form-group">
             <a href="#">Lupa Password?</a>
           </div>
-          <button type="submit" class="btn-login">
+          <button type="submit" class="btn-login" onClick={setData}>
             Masuk
           </button>
         </form>

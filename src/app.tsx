@@ -18,13 +18,15 @@ const App: Component = () => {
             </svg>
             <span class="ml-2 text-2xl font-bold">Tangan Kasih</span>
           </Link>
-          <nav class="flex space-x-4">
-            <Link href="/" class="hover:underline">Home</Link>
-            <Link href="/tentang-kami" class="hover:underline">Tentang Kami</Link>
-            <Link href="/penggalangan-dana" class="hover:underline">Penggalangan Dana</Link>
-            <Link href="/tips-and-tools" class="hover:underline">Tips and Tools</Link>
-            <Link href="login" class="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600">Login</Link>
-          </nav>
+          <div class="flex items-center space-x-4">
+            <nav class="flex space-x-4">
+              <Link href="/" class="hover:underline">Home</Link>
+              <Link href="/tentang-kami" class="hover:underline">Tentang Kami</Link>
+              <Link href="/penggalangan-dana" class="hover:underline">Penggalangan Dana</Link>
+              <Link href="/tips-and-tools" class="hover:underline">Tips and Tools</Link>
+            </nav>
+            <Link href="/login" class="bg-orange-500 text-white px-3 py-1 rounded-md hover:bg-orange-600 ml-auto">Login</Link>
+          </div>
         </div>
       </nav>
 
