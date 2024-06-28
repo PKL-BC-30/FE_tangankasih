@@ -1,28 +1,28 @@
 import { Component, createSignal } from 'solid-js';
 import './login.css';
+import googleLogo from '../pages/pages-img/google-logo.png';
+import facebookLogo from '../pages/pages-img/facebook-logo.png';
+import appleLogo from '../pages/pages-img/apple-logo.png';
 
 const Login: Component = () => {
   const [email, setEmail] = createSignal('');
   const [password, setPassword] = createSignal('');
 
-  const setData = () => {
-    console.log("email -> ", email())
-  }
-
   const handleSubmit = (e: Event) => {
     e.preventDefault();
-    // Handle form submission logic here
+    console.log('Email:', email());
+    console.log('Password:', password());
   };
 
   return (
     <div class="login-container">
       <div class="login-form">
         <div class="logo">
-          <h1>TanganKasih</h1>
+          <h1 class="brand-name">TanganKasih</h1>
         </div>
         <div class="title">
-          <h1>Halo!</h1>
-          <h2>Selamat Datang</h2>
+          <h1 class="greeting">Halo!</h1>
+          <h2 class="welcome">Selamat Datang</h2>
         </div>
         <form onSubmit={handleSubmit}>
           <div class="form-group">
@@ -31,7 +31,7 @@ const Login: Component = () => {
               type="email"
               id="email"
               value={email()}
-              onInput={(e) => setEmail(e.target.value)}
+              onInput={(e) => setEmail(e.currentTarget.value)}
               placeholder="Masukan email anda"
             />
           </div>
@@ -41,14 +41,14 @@ const Login: Component = () => {
               type="password"
               id="password"
               value={password()}
-              onInput={(e) => setPassword(e.target.value)}
+              onInput={(e) => setPassword(e.currentTarget.value)}
               placeholder="Password"
             />
           </div>
           <div class="form-group">
-            <a href="#">Lupa Password?</a>
+            <a href="#" class="forgot-password">Lupa Password?</a>
           </div>
-          <button type="submit" class="btn-login" onClick={setData}>
+          <button type="submit" class="btn-login">
             Masuk
           </button>
         </form>
@@ -56,13 +56,13 @@ const Login: Component = () => {
           <h3>atau</h3>
           <div class="social-buttons">
             <button class="btn-google">
-              <i class="fab fa-google"></i>
+              <img src={googleLogo} alt="Google Logo" class="social-icon" />
             </button>
             <button class="btn-facebook">
-              <i class="fab fa-facebook-f"></i>
+              <img src={facebookLogo} alt="Facebook Logo" class="social-icon" />
             </button>
             <button class="btn-apple">
-              <i class="fab fa-apple"></i>
+              <img src={appleLogo} alt="Apple Logo" class="social-icon" />
             </button>
           </div>
         </div>
