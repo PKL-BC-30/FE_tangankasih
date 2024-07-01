@@ -4,6 +4,7 @@ import type { RouteDefinition } from '@solidjs/router';
 import Home from './pages/home';
 import AboutData from './pages/about.data';
 import Login from './pages/login';
+import Donasi from './pages/donasi';
 
 export const routes: RouteDefinition[] = [
   {
@@ -22,5 +23,9 @@ export const routes: RouteDefinition[] = [
   {
     path: '/login',
     component: Login,
-  }
+  },
+  {
+    path: '/donasi',
+    component: Donasi,
+  },
 ];
