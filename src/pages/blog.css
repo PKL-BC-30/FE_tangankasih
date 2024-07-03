@@ -1,0 +1,58 @@
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Menentukan 2 kolom dalam grid */
+    gap: 20px;
+  }
+  
+  .event-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+    display: flex; /* Mengatur agar konten dalam event-card tampil berdampingan */
+    flex-direction: row; /* Mengatur konten berdampingan dalam baris */
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-card.selected {
+    border: 2px solid #f8c26b;
+  }
+  
+  .event-date {
+    background-color: #f8c26b;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .event-image {
+    width: 50%; /* Setengah lebar dari parent untuk masing-masing gambar */
+    height: auto;
+    object-fit: cover;
+    margin-right: 10px; /* Memberi jarak antara gambar */
+  }
+  
+  .event-details {
+    flex: 1; /* Membuat detail event mengambil ruang yang tersisa */
+    margin-left: 10px; /* Memberi jarak antara gambar dan detail event */
+  }
+  
+  .organizer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .organizer span {
+    font-size: 0.8em;
+    color: #96592d;
+  }
+  

@@ -3,9 +3,7 @@ import './index.css';
 
 import { render } from 'solid-js/web';
 import { Router } from '@solidjs/router';
-import App from './pages/app';
-import Register from './pages/register';
-
+import App from './app';
 const root = document.getElementById('root');
 
 if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
