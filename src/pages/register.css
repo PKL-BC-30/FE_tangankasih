@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #3f1a16;
+}
+
+.register-container {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  background: url('C:\Users\acer\tangankasih\FE_tangankasih\src\pages\pages-img\tangan-sinar.jpeg') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-color: #1e1e1e;
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #d9d9d9;
+  position: relative; /* Necessary for the overlay */
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form label {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.register-form input,
+.register-form select {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.register-form input {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+.register-form select {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+.dob-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dob-container select {
+  width: 32%;
+}
+
+.register-button {
+  background: #871a0c;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-button:hover {
+  background: #741609;
+}
+
+.login-link {
+  margin-top: 15px;
+}
+
+.login-link a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
