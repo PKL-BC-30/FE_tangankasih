@@ -6,6 +6,7 @@ import AboutData from './pages/about.data';
 import Login from './pages/login';
 import Donasi from './pages/donasi';
 import PageDonasi from './pages/donasi-page';
+import Register from './pages/register';
 
 export const routes: RouteDefinition[] = [
   {
@@ -33,4 +34,8 @@ export const routes: RouteDefinition[] = [
     path: '/donasi-page',
     component: PageDonasi,
   },
+  {
+    path: '/register',
+    component: Register,
+  }
 ];

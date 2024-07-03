@@ -67,11 +67,12 @@ const Login: Component = () => {
           </div>
         </div>
         <div class="signup">
-          <p>Belum punya akun? <a href="#">Daftar</a></p>
+          <p>Belum punya akun? <a href="/register">Daftar</a></p>
         </div>
       </div>
       <div class="login-image"></div>
     </div>
+    
   );
 };
 
