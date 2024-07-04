@@ -1,6 +1,7 @@
 import { For, Show, onMount, createEffect } from 'solid-js';
 import { createSignal } from 'solid-js';
 import './donasi-page.css';
+import { Link, useRoutes, useLocation } from '@solidjs/router';
 import donasi1 from '../pages/pages-img/donasi-1.png';
 
 function App() {
@@ -80,7 +81,9 @@ function App() {
                         </div>
                     </div>
                 </Show>
-                <button class="donate-button">DONATE</button>
+                <button class="donate-button">
+                    <Link href="/donate" class="hover:underline">Donate</Link>
+                </button>
             </div>
         </div>
     );

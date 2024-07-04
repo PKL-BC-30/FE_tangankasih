@@ -7,6 +7,7 @@ import Login from './pages/login';
 import Donasi from './pages/donasi';
 import PageDonasi from './pages/donasi-page';
 import Register from './pages/register';
+import Donate from './pages/donate';
 
 export const routes: RouteDefinition[] = [
   {
@@ -37,5 +38,9 @@ export const routes: RouteDefinition[] = [
   {
     path: '/register',
     component: Register,
+  },
+  {
+    path: '/donate',
+    component: Donate,
   }
 ];
