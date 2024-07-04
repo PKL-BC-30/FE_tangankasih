@@ -81,9 +81,11 @@ function App() {
                         </div>
                     </div>
                 </Show>
-                <button class="donate-button">
-                    <Link href="/donate" class="hover:underline">Donate</Link>
-                </button>
+                <Link href="/donate" class="donate-link">
+                    <button class="donate-button">
+                        Donate
+                    </button>
+                </Link>
             </div>
         </div>
     );

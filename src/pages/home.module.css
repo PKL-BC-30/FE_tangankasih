@@ -1,82 +1,96 @@
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .main {
-    background-color: #57211C;
-    padding: 20px;
-  }
-  
-  .maxWidth {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #DDDDDD;
-  }
-  
-  .paragraph {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #F7F7F7;
-  }
-  
-  .button {
-    background-color: #FFC107;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .section {
-    background-color: #F7F7F7;
-    padding: 20px;
-  }
-  
-  .flexContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .card {
-    background-color: #FFFFFF;
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #DDDDDD;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .icon {
-    width: 24px;
-    height: 24px;
-    margin: 10px;
-  }
-  
-  .heading {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .count {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .footer {
-    background-color: #F7F7F7;
-    padding: 10px;
-    text-align: center;
-  }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main {
+  background-color: #57211C;
+  padding: 20px;
+}
+
+.maxWidth {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #DDDDDD;
+}
+
+.paragraph {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #F7F7F7;
+}
+
+.button {
+  display: inline-block;
+  background-color: #FFC107;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e0a806; /* Warna kuning yang lebih gelap */
+}
+
+.section {
+  background-color: #F7F7F7;
+  padding: 20px;
+}
+
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin: 10px;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.count {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #57211C;
+  padding: 10px;
+  text-align: center;
+}

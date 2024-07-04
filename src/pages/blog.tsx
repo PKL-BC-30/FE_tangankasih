@@ -8,7 +8,7 @@ import blogbg from './pages-img/blog-bg.png';
 
 function App() {
   const [selectedEvent, setSelectedEvent] = createSignal<number | null>(null);
-
+  
   const events = [
     {
       id: 1,

@@ -1,5 +1,4 @@
 import type { Component } from 'solid-js';
-
 import styles from './home.module.css';
 
 const Home: Component = () => {
