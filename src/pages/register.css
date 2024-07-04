@@ -15,18 +15,46 @@ body {
   background-color: #1e1e1e;
   border-radius: 10px; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.image-section {
+  flex: 1;
+  background: url('C:\\Users\\HP\\tangan-kasih\\src\\pages\\pages-img\\tangan-sinar.jpeg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.image-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: 1; /* Make sure the overlay is above the background image */
+}
+
+.form-section {
+  flex: 1;
+  padding: 20px;
   color: #d9d9d9;
-  position: relative; /* Necessary for the overlay */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2rem; /* Increased font size for better readability */
   margin-bottom: 20px;
   text-align: left;
 }
 
 .title {
   margin-bottom: 20px;
+  font-size: 1.5rem; /* Increased font size for better readability */
 }
 
 .register-form {
@@ -60,10 +88,12 @@ body {
 .dob-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap; /* Ensure flexibility in smaller screens */
 }
 
 .dob-container select {
-  width: 32%;
+  width: 100%; /* Full width for smaller screens */
+  margin-bottom: 10px; /* Spacing between selects */
 }
 
 .register-button {
@@ -74,6 +104,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease;
+  width: 100%; /* Full width button */
 }
 
 .register-button:hover {
@@ -83,6 +114,7 @@ body {
 .login-link {
   text-align: center;
   margin-top: 15px;
+  text-align: center; /* Center align login link */
 }
 
 .login-link a {
@@ -92,4 +124,16 @@ body {
 
 .login-link a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .register-page {
+    flex-direction: column; /* Stack sections on smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .image-section,
+  .form-section {
+    width: 100%; /* Full width on smaller screens */
+  }
 }

@@ -23,8 +23,7 @@ const App: Component = () => {
               <Link href="/" class="hover:underline">Home</Link>
               <Link href="/tentang-kami" class="hover:underline">Tentang Kami</Link>
               <Link href="/donasi" class="hover:underline">Penggalangan Dana</Link>
-              
-              <Link href="/tips-and-tools" class="hover:underline">Tips and Tools</Link>
+              <Link href="/blog" class="hover:underline">Fundraise Blog</Link>
             </nav>
             <Link href="/login" class="bg-orange-500 text-white px-3 py-1 rounded-md hover:bg-orange-600 ml-auto">Login</Link>
           </div>
