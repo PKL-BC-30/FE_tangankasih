@@ -15,8 +15,8 @@ const Login: Component = () => {
   };
 
   return (
-    <div class="login-container">
-      <div class="login-form">
+    <div class="login-page">
+      <div class="form-section">
         <div class="logo">
           <h1 class="brand-name">TanganKasih</h1>
         </div>
@@ -70,9 +70,8 @@ const Login: Component = () => {
           <p>Belum punya akun? <a href="/register">Daftar</a></p>
         </div>
       </div>
-      <div class="login-image"></div>
+      <div class="image-section"></div>
     </div>
-    
   );
 };
 

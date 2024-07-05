@@ -1,5 +1,4 @@
 import { Component, createSignal } from "solid-js";
-import { useNavigate } from 'solid-app-router';
 import './register.css';
 
 const RegisterForm: Component = () => {
@@ -69,7 +68,7 @@ const RegisterForm: Component = () => {
 
   return (
     <div class="register-page">
-      <div class="image-section"></div>
+      <div class="image-section-2"></div>
       <div class="form-section">
         <h1 class="logo">TanganKasih</h1>
         <h2 class="title">Register</h2>

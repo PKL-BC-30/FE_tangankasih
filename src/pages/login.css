@@ -7,39 +7,40 @@ html, body {
   background-color: #222;
 }
 
-.login-container {
-  justify-content: space-between;
-  align-items: center;
-  height: 107vh;
-  width: 100vw;
-  background-color: #222;
-  color: #fff;
-  padding: 20px;
+.login-page {
   display: flex;
+  min-height: 80vh; /* Cukup tinggi untuk menampung semua elemen */
+  margin: 5vh auto; /* Berikan sedikit jarak dari atas dan bawah layar */
+  width: 90vw; /* Berikan sedikit jarak dari kiri dan kanan layar */
+  border-radius: 20px; /* Efek sudut melingkar */
+  overflow: hidden; /* Pastikan konten tidak keluar dari batas */
+  background-color: #333; /* Tambahkan warna latar belakang untuk membuat kontras */
+  max-width: 1200px; /* Batasi lebar maksimum */
 }
 
-.login-form {
-  width: 600px;
-  padding: 30px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background-color: #333;
+.form-section {
+  flex: 1;
+  padding: 20px; /* Sesuaikan padding agar tidak terlalu besar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
   position: relative;
-  z-index: 1; /* Tambahkan z-index pada form */
+  z-index: 1;
 }
 
 .logo {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Sesuaikan margin untuk menghemat ruang */
 }
 
 .title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px; /* Sesuaikan margin untuk menghemat ruang */
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Sesuaikan margin untuk menghemat ruang */
 }
 
 .form-group label {
@@ -73,7 +74,7 @@ html, body {
 
 .social-login {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px; /* Sesuaikan margin untuk menghemat ruang */
 }
 
 .social-buttons {
@@ -84,8 +85,8 @@ html, body {
 }
 
 .social-buttons button {
-  margin: 0 10px;
-  padding: 10px;
+  margin: 0 5px; /* Kurangi margin antara tombol untuk menghemat ruang */
+  padding: 5px; /* Kurangi padding tombol untuk menghemat ruang */
   border: none;
   border-radius: 5px;
   background-color: #444;
@@ -100,7 +101,7 @@ html, body {
 
 .signup {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px; /* Sesuaikan margin untuk menghemat ruang */
 }
 
 .signup a {
@@ -112,17 +113,21 @@ html, body {
   text-decoration: underline;
 }
 
-.login-image {
-  width: 60%;
-  height: 100%;
-  background-image: url("C:/Users/HP/tangan-kasih/src/pages/pages-img/login-hand.png");
+.image-section {
+  flex: 1;
+  background: url('C:\Users\HP\tangan-kasih\src\pages\pages-img\login-hand.png') no-repeat center center;
   background-size: cover;
-  background-position: center;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
   position: relative;
-  z-index: 0; /* Pastikan z-index lebih rendah dari form */
+}
+
+.image-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 .social-buttons button {
@@ -133,6 +138,6 @@ html, body {
 }
 
 .social-icon {
-  width: 24px; /* Ubah ukuran sesuai kebutuhan */
-  height: 24px; /* Ubah ukuran sesuai kebutuhan */
+  width: 24px;
+  height: 24px;
 }

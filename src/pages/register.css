@@ -1,60 +1,61 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background: #3f1a16;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #222;
 }
 
-.register-container {
-  max-width: 500px;
-  margin: 0 auto;
-  margin-top: 25px;
-  padding: 20px;
-  background: url('C:\Users\acer\tangankasih\FE_tangankasih\src\pages\pages-img\tangan-sinar.jpeg') no-repeat center center;
-  background-size: cover; /* Ensures the image covers the entire container */
-  background-color: #1e1e1e;
-  border-radius: 10px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
+.register-page {
+  display: flex;
+  min-height: 80vh; /* Cukup tinggi untuk menampung semua elemen */
+  margin: 5vh auto; /* Berikan sedikit jarak dari atas dan bawah layar */
+  width: 90vw; /* Berikan sedikit jarak dari kiri dan kanan layar */
+  border-radius: 20px; /* Efek sudut melingkar */
+  overflow: hidden; /* Pastikan konten tidak keluar dari batas */
+  background-color: #333; /* Tambahkan warna latar belakang untuk membuat kontras */
+  max-width: 1200px; /* Batasi lebar maksimum */
 }
 
-.image-section {
+.image-section-2 {
   flex: 1;
-  background: url('C:\\Users\\HP\\tangan-kasih\\src\\pages\\pages-img\\tangan-sinar.jpeg') no-repeat center center;
+  background: url('C:/Users/HP/tangan-kasih/src/pages/pages-img/tangan-sinar.jpeg') no-repeat center center;
   background-size: cover;
   position: relative;
+  z-index: 0;
 }
 
-.image-section::before {
+.image-section-2 ::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
-  z-index: 1; /* Make sure the overlay is above the background image */
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .form-section {
   flex: 1;
-  padding: 20px;
-  color: #d9d9d9;
-  position: relative;
+  padding: 20px; /* Sesuaikan padding agar tidak terlalu besar */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .logo {
-  font-size: 2rem; /* Increased font size for better readability */
-  margin-bottom: 20px;
-  text-align: left;
+  text-align: center;
+  margin-bottom: 15px; /* Sesuaikan margin untuk menghemat ruang */
 }
 
 .title {
-  margin-bottom: 20px;
-  font-size: 1.5rem; /* Increased font size for better readability */
+  text-align: center;
+  margin-bottom: 20px; /* Sesuaikan margin untuk menghemat ruang */
 }
 
 .register-form {
@@ -73,27 +74,18 @@ body {
   padding: 10px;
   border: none;
   border-radius: 5px;
-}
-
-.register-form input {
-  background: #1e1e1e;
-  color: #fff;
-}
-
-.register-form select {
-  background: #1e1e1e;
+  background-color: #444;
   color: #fff;
 }
 
 .dob-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* Ensure flexibility in smaller screens */
 }
 
 .dob-container select {
-  width: 100%; /* Full width for smaller screens */
-  margin-bottom: 10px; /* Spacing between selects */
+  width: 32%;
+  margin-bottom: 10px;
 }
 
 .register-button {
@@ -104,7 +96,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease;
-  width: 100%; /* Full width button */
+  width: 100%;
 }
 
 .register-button:hover {
@@ -114,7 +106,6 @@ body {
 .login-link {
   text-align: center;
   margin-top: 15px;
-  text-align: center; /* Center align login link */
 }
 
 .login-link a {
@@ -128,12 +119,12 @@ body {
 
 @media (max-width: 768px) {
   .register-page {
-    flex-direction: column; /* Stack sections on smaller screens */
-    height: auto; /* Allow height to adjust based on content */
+    flex-direction: column;
+    height: auto;
   }
 
   .image-section,
   .form-section {
-    width: 100%; /* Full width on smaller screens */
+    width: 100%;
   }
 }
