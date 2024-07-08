@@ -1,0 +1,79 @@
+/* agGrid.css */
+
+/* Optional: Global styles for Ag-Grid */
+.ag-theme-alpine {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Optional: Styles for grid headers */
+  .ag-header {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  /* Optional: Styles for grid header text */
+  .ag-header-cell-text {
+    font-weight: bold;
+  }
+  
+  /* Optional: Styles for grid rows */
+  .ag-row {
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Optional: Styles for even rows */
+  .ag-row-even {
+    background-color: #f9f9f9;
+  }
+  
+  /* Optional: Styles for selected rows */
+  .ag-row-selected {
+    background-color: #cde6c7;
+  }
+  
+  /* Optional: Styles for grid cell */
+  .ag-cell {
+    padding: 8px;
+  }
+  
+  /* Optional: Styles for delete button in actions column */
+  .ag-cell button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  /* Optional: Hover effect for delete button */
+  .ag-cell button:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Optional: Styles for input fields */
+  .input-field {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Optional: Styles for Add User button */
+  .add-user-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Optional: Hover effect for Add User button */
+  .add-user-btn:hover {
+    background-color: #45a049;
+  }
+  

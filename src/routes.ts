@@ -9,12 +9,19 @@ import PageDonasi from './pages/donasi-page';
 import Register from './pages/register';
 import Donate from './pages/donate';
 import Blog from './pages/blog';
+import agGrid from './ag - Grid/agGridcreate';
 
 export const routes: RouteDefinition[] = [
   {
     path: '/',
     component: Home,
   },
+
+  {
+    path: '/grid',
+    component: agGrid,
+  },
+
   {
     path: '/about',
     component: lazy(() => import('./pages/about')),
