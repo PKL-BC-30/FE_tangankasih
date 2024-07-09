@@ -1,4 +1,5 @@
 import { Component, createSignal } from "solid-js";
+import { useNavigate } from "@solidjs/router";
 import './register.css';
 
 const RegisterForm: Component = () => {
@@ -11,6 +12,9 @@ const RegisterForm: Component = () => {
   const [emailError, setEmailError] = createSignal("");
   const [passwordError, setPasswordError] = createSignal("");
   const [confirmError, setConfirmError] = createSignal("");
+  const [showPopup, setShowPopup] = createSignal(false);
+
+  const navigate = useNavigate();
 
   const handleRegister = (e: Event) => {
     e.preventDefault();
@@ -41,15 +45,25 @@ const RegisterForm: Component = () => {
         dateOfBirth: `${day()}-${month()}-${year()}`,
       };
 
-      // Save the username and password to localStorage as an object
-      localStorage.setItem('user', JSON.stringify({
-        email: userData.email,
-        username: userData.fullName,
-        password: userData.password 
-      }));
+      // Retrieve existing users from localStorage
+      const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+      
+      // Add new user to the list
+      const updatedUsers = [...existingUsers, userData];
+      
+      // Save updated list back to localStorage
+      localStorage.setItem('users', JSON.stringify(updatedUsers));
 
       console.log(userData);
+
+      // Show popup
+      setShowPopup(true);
     }
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+    navigate('/login');
   };
 
   const generateDays = () => {
@@ -110,6 +124,15 @@ const RegisterForm: Component = () => {
           <p class="login-link">Sudah punya akun? <a href="/login">Masuk</a></p>
         </form>
       </div>
+      {showPopup() && (
+        <div class="popup">
+          <div class="popup-content">
+            <h2>Registrasi Berhasil!</h2>
+            <p>Anda telah berhasil mendaftar. Silakan lanjut ke halaman login.</p>
+            <button onClick={closePopup}>Oke</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
