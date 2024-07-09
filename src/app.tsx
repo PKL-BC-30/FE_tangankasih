@@ -1,7 +1,7 @@
 import { Component } from 'solid-js';
 import { Link, useRoutes, useLocation } from '@solidjs/router';
 import Donate from './pages/donate';
-import agGrid from '../src/ag - Grid/agGrid'; // Import halaman agGrid
+import agGrid from './agGrid/agGrid'; // Import halaman agGrid
 import { routes } from './routes';
 
 const App: Component = () => {
