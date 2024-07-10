@@ -10,6 +10,7 @@ import Register from './pages/register';
 import Donate from './pages/donate';
 import Blog from './pages/blog';
 import agGrid from './agGrid/agGridcreate';
+import TentangKami from './pages/tentangkami';
 
 export const routes: RouteDefinition[] = [
   {
@@ -54,5 +55,9 @@ export const routes: RouteDefinition[] = [
   {
     path: '/blog',
     component: Blog,
+  },
+  {
+    path: '/tentangkami',
+    component: TentangKami,
   }
 ];

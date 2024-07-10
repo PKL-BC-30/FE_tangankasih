@@ -1,7 +1,5 @@
 import { Component } from 'solid-js';
 import { Link, useRoutes, useLocation } from '@solidjs/router';
-import Donate from './pages/donate';
-import agGrid from './agGrid/agGridcreate'; // Import halaman agGrid
 import { routes } from './routes';
 
 const App: Component = () => {
@@ -38,7 +36,7 @@ const App: Component = () => {
                 <Link href="/" class="hover:underline">
                   Home
                 </Link>
-                <Link href="/tentang-kami" class="hover:underline">
+                <Link href="/tentangkami" class="hover:underline">
                   Tentang Kami
                 </Link>
                 <Link href="/donasi" class="hover:underline">
