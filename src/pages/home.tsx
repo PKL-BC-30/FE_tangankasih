@@ -1,14 +1,25 @@
 import type { Component } from 'solid-js';
 import styles from './home.module.css';
+import homeimg from '../pages/pages-img/tentangkami-1.png';
+import { Link } from '@solidjs/router';
 
 const Home: Component = () => {
   return (
     <div class={styles.container}>
       <main class={styles.main}>
-        <div class={styles.maxWidth}>
+        <div class={styles.textSection}>
           <h1 class={styles.title}>Platform Donasi Digital Terbaik se-Banyumas Raya</h1>
           <p class={styles.paragraph}>Kami telah membantu banyak kelompok orang atau negara yang tertindas dan berhasil menyalurkan banyak manfaat untuk mereka</p>
-          <a href="#" class={styles.button}>Lihat Disini</a>
+          <div class={styles.buttonContainer}>
+            <Link href="/tentangkami" class={styles.btnTentang}>Tentang Kami</Link>
+            <Link href="/blog" class={styles.btnSecondary}>
+              Trending Cause
+              <span class={styles.arrowRight}></span>
+            </Link>
+          </div>
+        </div>
+        <div class={styles.imageSection}>
+          <img src={homeimg} alt="Description of image" class={styles.image} />
         </div>
       </main>
 
