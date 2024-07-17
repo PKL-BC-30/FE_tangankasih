@@ -62,14 +62,14 @@ html, body {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #ff9900;
+  background-color: #901100;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .btn-login:hover {
-  background-color: #e0a806;
+  background-color: #57211C;
 }
 
 .social-login {

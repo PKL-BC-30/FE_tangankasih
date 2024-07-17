@@ -50,7 +50,7 @@ const App: Component = () => {
               </nav>
               <Link
                 href="/login"
-                class="bg-yellow-500 text-white px-3 py-1 rounded-md hover:bg-yellow-600 ml-auto"
+                class="text-white px-3 py-1 rounded-md ml-auto" style="background-color: #901100;"
               >
                 Login
               </Link>

@@ -48,7 +48,7 @@ const Login: Component = () => {
           <div class="form-group">
             <a href="#" class="forgot-password">Lupa Password?</a>
           </div>
-          <button type="submit" class="btn-login">
+          <button class="btn-login">
             Masuk
           </button>
         </form>
