@@ -11,6 +11,7 @@ import Donate from './pages/donate';
 import Blog from './pages/blog';
 import agGrid from './agGrid/agGridcreate';
 import TentangKami from './pages/tentangkami';
+import BlogPage from './pages/blog-page';
 
 export const routes: RouteDefinition[] = [
   {
@@ -59,5 +60,9 @@ export const routes: RouteDefinition[] = [
   {
     path: '/tentangkami',
     component: TentangKami,
+  },
+  {
+    path: '/blogpage',
+    component: BlogPage,
   }
 ];
