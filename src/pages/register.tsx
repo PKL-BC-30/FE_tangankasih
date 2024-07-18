@@ -120,7 +120,7 @@ const RegisterForm: Component = () => {
             </select>
           </div>
 
-          <button type="submit" class="register-button">Daftar</button>
+          <button class="register-button">Daftar</button>
           <p class="login-link">Sudah punya akun? <a href="/login">Masuk</a></p>
         </form>
       </div>
