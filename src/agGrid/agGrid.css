@@ -1,189 +1,174 @@
-/* agGrid.css */
-
-/* General styles for the grid */
-.ag-theme-alpine {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  transition: all 0.3s ease;
-}
-
-/* Container for grid and form */
+/* Container for the grid and form */
 .grid-form-container {
   display: flex;
+  flex-direction: row; /* Arrange items in a row */
   gap: 20px;
-  align-items: flex-start;
-  padding: 20px;
-  background-color: #f0f0f0;
+  margin: 20px;
+  font-family: 'Arial', sans-serif;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  height: 100vh; /* Ensure container takes full viewport height */
+}
+
+/* Styling for the ag-Grid */
+.ag-theme-alpine {
+  flex: 2; /* Allow grid to take up more space */
   border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Action buttons */
-.action-buttons {
-  display: flex;
-  justify-content: flex-end; /* Menempatkan tombol-tombol di ujung kanan */
-  align-items: center; /* Memastikan tombol-tombol berada di tengah vertikal */
-  height: 100%; /* Mengisi tinggi container sesuai dengan baris grid */
-}
-
-/* Tombol Edit */
-.edit-button {
-  padding: 8px 16px;
-  margin-right: 8px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.edit-button:hover {
-  background-color: #2e7d32;
-}
-
-/* Tombol Delete */
-.delete-button {
-  padding: 8px 16px;
-  background-color: #f44336;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.delete-button:hover {
-  background-color: #d32f2f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  height: 80vh; /* Ensure grid takes up significant height */
 }
 
 /* Edit form container */
 .edit-form {
-  padding: 30px;
+  background: #ffffff;
+  padding: 20px; /* Reduce padding */
   border-radius: 10px;
-  background-color: #ffffff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  font-family: 'Roboto', sans-serif;
-  width: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 350px; /* Reduce max-width */
+  width: 100%; /* Ensure the form takes up necessary space */
+  transition: transform 0.3s ease-in-out;
+  flex: 1; /* Allow form to take up available space */
+  height: auto; /* Ensure form height adjusts to content */
+}
+
+.edit-form:hover {
+  transform: scale(1.02);
+}
+
+/* Form title */
+.edit-form h3 {
+  margin-bottom: 15px; /* Reduce margin */
+  color: #333333;
+  text-align: center;
+  font-size: 1.3rem; /* Reduce font size */
+}
+
+/* Form labels */
+.edit-form label {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-/* Edit form header */
-.edit-form h3 {
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: #333;
-  border-bottom: 2px solid #4caf50;
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-/* Edit form labels */
-.edit-form label {
+  margin-bottom: 10px; /* Reduce margin */
   font-weight: bold;
-  color: #555;
+  color: #666666;
+  position: relative;
+  font-size: 0.9rem; /* Reduce font size */
 }
 
-/* Edit form inputs */
+/* Form input fields */
 .edit-form input[type="text"],
 .edit-form input[type="password"],
 .edit-form input[type="date"] {
-  width: calc(100% - 20px);
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
+  padding: 10px; /* Reduce padding */
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 0.9rem; /* Reduce font size */
   transition: border-color 0.3s ease;
 }
 
 .edit-form input[type="text"]:focus,
 .edit-form input[type="password"]:focus,
 .edit-form input[type="date"]:focus {
-  border-color: #4caf50;
+  border-color: #4CAF50;
+  outline: none;
 }
 
-/* Save and Cancel buttons */
-.button-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.edit-form button {
-  padding: 12px 25px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  width: 120px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.edit-form button:first-of-type {
-  background: linear-gradient(135deg, #1e88e5, #0d47a1);
-  color: white;
-}
-
-.edit-form button:first-of-type:hover {
-  background: linear-gradient(135deg, #0d47a1, #1e88e5);
-  transform: translateY(-2px);
-}
-
-.edit-form button:last-of-type {
-  background: linear-gradient(135deg, #757575, #424242);
-  color: white;
-}
-
-.edit-form button:last-of-type:hover {
-  background: linear-gradient(135deg, #424242, #757575);
-  transform: translateY(-2px);
-}
-
-/* Password toggle button */
+/* Toggle password button */
 .toggle-password {
   background: none;
   border: none;
+  position: absolute;
+  right: 15px; /* Adjust position */
+  top: 30px; /* Adjust position */
   cursor: pointer;
-  margin-left: 0.5em;
   padding: 0;
 }
 
-/* Style the grid to make it more compact */
-.ag-theme-alpine .ag-header-cell, 
-.ag-theme-alpine .ag-cell {
-  padding: 12px;
-  text-align: center; /* Center align content */
+.toggle-password i {
+  color: #666666;
 }
 
-.ag-theme-alpine .ag-row {
-  height: 56px;
-  transition: background-color 0.2s ease; /* Smooth background transition */
-}
-
-.ag-theme-alpine .ag-row:hover {
-  background-color: #f0f0f0; /* Light background color on hover */
-}
-
-.ag-theme-alpine .ag-header {
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #ddd;
-}
-
-.ag-theme-alpine .ag-header-cell-label {
+/* Button container */
+.button-container {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Save and Cancel buttons */
+.button-container button {
+  padding: 10px 15px; /* Reduce padding */
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem; /* Reduce font size */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button-container button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.button-container button:focus {
+  outline: none;
+}
+
+/* Save button */
+.button-container button:nth-child(1) {
+  background: #4CAF50;
+  color: #ffffff;
+}
+
+/* Cancel button */
+.button-container button:nth-child(2) {
+  background: #f44336;
+  color: #ffffff;
+}
+
+/* Action buttons in the grid */
+.action-buttons {
+  display: flex;
+  gap: 10px;
   justify-content: center;
 }
 
-.ag-theme-alpine .ag-cell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.edit-button,
+.delete-button {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  background: #f0f0f0;
+}
+
+/* Edit button */
+.edit-button {
+  color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.edit-button:hover {
+  color: #ffffff;
+  background: #4CAF50;
+}
+
+/* Delete button */
+.delete-button {
+  color: #f44336;
+  border-color: #f44336;
+}
+
+.delete-button:hover {
+  color: #ffffff;
+  background: #f44336;
 }

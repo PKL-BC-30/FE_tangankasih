@@ -20,7 +20,7 @@ html, body {
 
 .image-section-2 {
   flex: 1;
-  background: url('C:/Users/HP/tangan-kasih/src/pages/pages-img/tangan-sinar.jpeg') no-repeat center center;
+  background: url('C:\Users\acer\tangankasih\FE_tangankasih\src\pages\pages-img\tangan-sinar.jpeg') no-repeat center center;
   background-size: cover;
   position: relative;
   z-index: 0;
