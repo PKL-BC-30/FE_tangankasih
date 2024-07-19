@@ -58,15 +58,15 @@ function App() {
       <main>
         <section class="hero">
           <div class="hero-content">
-            <h2>Donation</h2>
-            <h1>Fund Raising</h1>
+            <h2>Donasi</h2>
+            <h1>Penggalangan Dana</h1>
           </div>
           <div class="hero-image">
             <img src={blogbg} alt="Coins" />
           </div>
         </section>
         <section class="events">
-          <h2>Upcoming Events</h2>
+          <h2>Kegiatan-kegiatan mendatang :</h2>
           <div class="events-grid">
             {events.map((event, index) => (
               <Link href={event.link} class="event-card-link">

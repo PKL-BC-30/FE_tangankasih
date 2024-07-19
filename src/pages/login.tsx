@@ -3,6 +3,7 @@ import './login.css';
 import googleLogo from '../pages/pages-img/google-logo.png';
 import facebookLogo from '../pages/pages-img/facebook-logo.png';
 import appleLogo from '../pages/pages-img/apple-logo.png';
+import loginhand from './pages-img/login-hand.png';
 
 const Login: Component = () => {
   const [email, setEmail] = createSignal('');
@@ -70,7 +71,9 @@ const Login: Component = () => {
           <p>Belum punya akun? <a href="/register">Daftar</a></p>
         </div>
       </div>
-      <div class="image-section"></div>
+      <div class="image-section">
+        <img src={loginhand} alt="hand" />
+      </div>
     </div>
   );
 };

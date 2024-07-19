@@ -7,12 +7,12 @@ const TanganKasih = () => {
   return (
     <div class="container-tentangkami">
       <div class="about-us">
-        <h1 class="main-heading">About Us</h1>
+        <h1 class="main-heading">Tentang Kami</h1>
         
         <div class="section">
           <div class="text-image-container">
             <div class="text-container">
-              <h2 class="sub-heading">Our Story</h2>
+              <h2 class="sub-heading">Sebuah Cerita</h2>
               <p class="paragraph">
                 Tangankasih adalah jembatan yang menghubungkan hati yang ingin
                 membantu dengan mereka yang membutuhkan uluran tangan. Kami
@@ -35,7 +35,7 @@ const TanganKasih = () => {
         <div class="section">
           <div class="text-image-container reverse">
             <div class="text-container">
-              <h2 class="sub-heading">Our Mission</h2>
+              <h2 class="sub-heading">Misi Kami</h2>
               <p class="paragraph">
                 Kami di Tangankasih sangat mengutamakan transparansi. Setiap donasi yang
                 masuk dan keluar dapat dilacak dengan mudah, memberikan kepercayaan
@@ -58,7 +58,7 @@ const TanganKasih = () => {
         <div class="section">
           <div class="text-image-container">
             <div class="text-container">
-              <h2 class="sub-heading">Our Philosophy</h2>
+              <h2 class="sub-heading">Filosofi Kami</h2>
               <p class="paragraph">
                 Tangankasih berkomitmen untuk meningkatkan kesadaran masyarakat
                 mengenai kondisi mereka yang kurang beruntung. Melalui berbagai kampanye

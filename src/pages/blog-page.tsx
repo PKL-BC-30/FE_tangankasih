@@ -40,7 +40,7 @@ const BlogPage: Component = () => {
           <div class={`post ${index() === 0 ? 'first-post' : 'standard-post'}`}>
             <img class="image" src={post.image} alt={post.title} />
             <div class="text-content">
-              <h2 class="title">{post.title}</h2>
+              <h2 class="title-blog">{post.title}</h2>
               <p class="date">{post.date}</p>
               <p class="content">{post.content}</p>
             </div>

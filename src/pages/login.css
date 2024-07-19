@@ -115,7 +115,6 @@ html, body {
 
 .image-section {
   flex: 1;
-  background: url('C:\Users\acer\tangankasih\FE_tangankasih\src\pages\pages-img\login-hand.png') no-repeat center center;
   background-size: cover;
   position: relative;
 }

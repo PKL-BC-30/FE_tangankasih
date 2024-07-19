@@ -1,3 +1,7 @@
+.events {
+  color: #8e8e8e;
+}
+
 .events-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Menentukan 2 kolom dalam grid */
