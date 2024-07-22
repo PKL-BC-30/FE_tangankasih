@@ -1,12 +1,12 @@
 import { Component } from 'solid-js';
 import { Link } from '@solidjs/router';
 import './donasi.css';
-import donasi1 from '../pages/pages-img/donasi-1.png';
-import donasi2 from '../pages/pages-img/donasi-2.png';
-import donasi3 from '../pages/pages-img/donasi-3.png';
-import donasi4 from '../pages/pages-img/donasi-4.png';
-import donasi5 from '../pages/pages-img/donasi-5.png';
-import donasi6 from '../pages/pages-img/donasi-6.png';
+import donasi1 from '/public/pages-img/donasi-1.png';
+import donasi2 from '/public/pages-img/donasi-2.png';
+import donasi3 from '/public/pages-img/donasi-3.png';
+import donasi4 from '/public/pages-img/donasi-4.png';
+import donasi5 from '/public/pages-img/donasi-5.png';
+import donasi6 from '/public/pages-img/donasi-6.png';
 
 const App: Component = () => {
   return (

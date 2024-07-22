@@ -10,7 +10,7 @@ import Register from './pages/register';
 import Donate from './pages/donate';
 import Blog from './pages/blog';
 import agGrid from './agGrid/agGridcreate';
-import TentangKami from './pages/tentangkami';
+import TentangKami from './pages/tentang-kami';
 import BlogPage from './pages/blog-page';
 
 export const routes: RouteDefinition[] = [

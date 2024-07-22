@@ -1,7 +1,7 @@
 import { Component, createSignal } from "solid-js";
 import { useNavigate } from "@solidjs/router";
 import './register.css';
-import registerimg from './pages-img/tangan-sinar.jpeg'
+import registerimg from '/public/pages-img/tangan-sinar.jpeg'
 
 const RegisterForm: Component = () => {
   const [email, setEmail] = createSignal("");

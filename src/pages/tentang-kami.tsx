@@ -1,7 +1,7 @@
 import { Component } from "solid-js";
-import './tentangkami.css'
-import tentangkami1 from '../pages/pages-img/tentangkami-1.png';
-import tentangkami2 from '../pages/pages-img/donasi-5.png';
+import './tentang-kami.css'
+import tentangkami1 from '/public/pages-img/tentangkami-1.png';
+import tentangkami2 from '/public/pages-img/donasi-5.png';
 
 const TanganKasih = () => {
   return (

@@ -1,18 +1,29 @@
 import { Component, createSignal } from 'solid-js';
+import { useNavigate } from '@solidjs/router';
 import './login.css';
-import googleLogo from '../pages/pages-img/google-logo.png';
-import facebookLogo from '../pages/pages-img/facebook-logo.png';
-import appleLogo from '../pages/pages-img/apple-logo.png';
-import loginhand from './pages-img/login-hand.png';
+import googleLogo from '/public/pages-img/google-logo.png';
+import facebookLogo from '/public/pages-img/facebook-logo.png';
+import appleLogo from '/public/pages-img/apple-logo.png';
+import loginhand from '/public/pages-img/login-hand.png';
 
 const Login: Component = () => {
   const [email, setEmail] = createSignal('');
   const [password, setPassword] = createSignal('');
+  const [error, setError] = createSignal('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e: Event) => {
     e.preventDefault();
-    console.log('Email:', email());
-    console.log('Password:', password());
+
+    const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+    const user = existingUsers.find((user) => user.email === email() && user.password === password());
+
+    if (user) {
+      setError('');
+      navigate('/'); // Redirect to home page
+    } else {
+      setError('Email atau password salah');
+    }
   };
 
   return (
@@ -46,10 +57,11 @@ const Login: Component = () => {
               placeholder="Password"
             />
           </div>
+          {error() && <div class="error">{error()}</div>}
           <div class="form-group">
             <a href="#" class="forgot-password">Lupa Password?</a>
           </div>
-          <button class="btn-login">
+          <button class="btn-login-form" >
             Masuk
           </button>
         </form>

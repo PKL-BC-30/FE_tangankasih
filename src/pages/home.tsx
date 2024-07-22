@@ -1,6 +1,6 @@
 import type { Component } from 'solid-js';
 import styles from './home.module.css';
-import homeimg from '../pages/pages-img/tentangkami-1.png';
+import homeimg from '/public/pages-img/tentangkami-1.png';
 import { Link } from '@solidjs/router';
 
 const Home: Component = () => {

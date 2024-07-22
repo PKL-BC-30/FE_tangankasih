@@ -1,13 +1,13 @@
 import { createSignal } from 'solid-js';
 import { Link } from '@solidjs/router';
 import './blog.css';
-import blog1 from './pages-img/blog-1.png';
-import blog2 from './pages-img/blog-2.png';
-import blog3 from './pages-img/blog-3.png';
-import blog4 from './pages-img/blog-4.png';
-import blogbg from './pages-img/blog-bg.png';
+import blog1 from '/public/pages-img/blog-1.png';
+import blog2 from '/public/pages-img/blog-2.png';
+import blog3 from '/public/pages-img/blog-3.png';
+import blog4 from '/public/pages-img/blog-4.png';
+import blogbg from '/public/pages-img/blog-bg.png';
 
-function App() {
+const Blog = () => {
   const [selectedEvent, setSelectedEvent] = createSignal<number | null>(null);
 
   const events = [
@@ -68,7 +68,7 @@ function App() {
         <section class="events">
           <h2>Kegiatan-kegiatan mendatang :</h2>
           <div class="events-grid">
-            {events.map((event, index) => (
+            {events.map((event) => (
               <Link href={event.link} class="event-card-link">
                 <div
                   classList={{
@@ -99,4 +99,4 @@ function App() {
   );
 }
 
-export default App;
+export default Blog;

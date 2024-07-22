@@ -1,6 +1,6 @@
 import { Component, For } from 'solid-js';
-import blog1 from './pages-img/blog-1.png';
-import blog2 from './pages-img/blog-2.png'; // Gambar baru untuk donasi
+import blog1 from '/public/pages-img/blog-1.png';
+import blog2 from '/public/pages-img/blog-2.png'; // Gambar baru untuk donasi
 import './blog-page.css';
 import { Link } from '@solidjs/router';
 

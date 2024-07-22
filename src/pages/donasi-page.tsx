@@ -2,7 +2,7 @@ import { For, Show, onMount, createEffect } from 'solid-js';
 import { createSignal } from 'solid-js';
 import './donasi-page.css';
 import { Link, useRoutes, useLocation } from '@solidjs/router';
-import donasi1 from '../pages/pages-img/donasi-1.png';
+import donasi1 from '/public/pages-img/donasi-1.png';
 
 function App() {
     const [donationGoal, setDonationGoal] = createSignal('5,000/2,212,000 Tsh');
