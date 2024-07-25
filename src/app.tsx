@@ -1,7 +1,5 @@
-import { Component } from 'solid-js';
+import { Component, onMount } from 'solid-js';
 import { Link, useRoutes, useLocation } from '@solidjs/router';
-import Donate from './pages/donate';
-import agGrid from './agGrid/agGridcreate'; // Import halaman agGrid
 import { routes } from './routes';
 
 const App: Component = () => {
@@ -10,6 +8,14 @@ const App: Component = () => {
 
   // Menentukan apakah navbar harus ditampilkan berdasarkan lokasi
   const showNavbar = location.pathname !== '/grid';
+
+  onMount(() => {
+    const tentangLink = document.querySelector('#tentang-link');
+    tentangLink?.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.querySelector('#about-us')?.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
 
   return (
     <>
@@ -38,9 +44,9 @@ const App: Component = () => {
                 <Link href="/" class="hover:underline">
                   Home
                 </Link>
-                <Link href="/tentangkami" class="hover:underline">
+                <a href="#about-us" id="tentang-link" class="hover:underline">
                   Tentang Kami
-                </Link>
+                </a>
                 <Link href="/donasi" class="hover:underline">
                   Penggalangan Dana
                 </Link>

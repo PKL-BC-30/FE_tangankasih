@@ -1,36 +1,52 @@
+/* Container utama */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
+/* Main section */
 .main {
+  background-color: #57211C; /* Warna background utama */
+  color: white; /* Warna teks default */
+  padding: 20px;
+  border-radius: 10px; /* Tambahkan border-radius untuk efek rounded */
+}
+
+/* Wrapper for text and image in main section */
+.textImageWrapper {
   display: flex;
-  background-color: #57211C;
-  padding: 40px;
+  justify-content: space-between;
   align-items: center;
 }
 
+/* Teks Section */
 .textSection {
   flex: 1;
-  max-width: 50%;
-  padding-left: 75px; /* Added padding to the left */
-  padding-right: 25px; /* Optional: Adjust as needed for more space */
+  padding-right: 20px; /* Adjust space between text and image */
 }
 
+/* Gambar Section */
 .imageSection {
   flex: 1;
-  max-width: 50%;
   display: flex;
   justify-content: center;
+}
+
+/* Gambar dengan sudut melengkung */
+img {
+  border-radius: 10px; /* Membuat gambar memiliki sudut yang melengkung */
+  margin-bottom: 20px;
 }
 
 .image {
   max-width: 100%;
   height: auto;
-  border-radius: 15px; /* Added rounded corners */
+  border-radius: 15px;
+  display: block; /* Pastikan gambar tidak diperlakukan sebagai inline element */
 }
 
+/* Judul */
 .title {
   font-size: 28px;
   font-weight: bold;
@@ -38,110 +54,158 @@
   color: #DDDDDD;
 }
 
+/* Paragraf */
 .paragraph {
   font-size: 14px;
   margin-bottom: 20px;
   color: #F7F7F7;
-  text-align: justify; /* Justify text */
+  text-align: justify;
 }
 
+/* Container tombol */
 .buttonContainer {
   display: flex;
   gap: 10px;
 }
 
+/* Tombol Tentang Kami */
 .btnTentang {
   display: inline-block;
-  background-color: #FFC107;
+  background-color: #901100;
   color: #FFFFFF;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
   text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btnTentang:hover {
-  background-color: #e0a806;
-}
-
-.btnSecondary {
-  display: inline-flex;
-  align-items: center;
-  color: #FFC107;
   font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: color 0.3s ease;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
-.btnSecondary:hover {
-  color: #e0a806;
-}
-
-.arrowRight {
-  margin-left: 2px; /* Closer to the text */
+/* Tombol secondary */
+.btnSecondary {
   display: inline-block;
-  width: 10px; /* Smaller arrow */
-  height: 10px; /* Smaller arrow */
-  border: solid #FFC107;
+  color: #f7f7f7;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Arahkan panah pada tombol */
+.arrowRight {
+  margin-left: 8px;
+  border: solid white;
   border-width: 0 2px 2px 0;
-  transform: rotate(-45deg); /* Adjusted rotation */
-  transition: border-color 0.3s ease;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 
-.btnSecondary:hover .arrowRight {
-  border-color: #e0a806;
-}
-
+/* Section */
 .section {
-  background-color: #F7F7F7;
-  padding: 20px;
+  margin: 40px 0;
 }
 
+/* Flex container untuk kartu */
 .flexContainer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 20px;
+  justify-content: space-around;
 }
 
+/* Kartu */
 .card {
-  background-color: #FFFFFF;
+  background: #FFF;
+  color: #333;
   padding: 20px;
-  margin: 20px;
-  border: 1px solid #DDDDDD;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
+/* Ikon dalam kartu */
 .icon {
-  width: 24px;
-  height: 24px;
-  margin: 10px;
-}
-
-.heading {
-  font-size: 18px;
-  font-weight: bold;
+  width: 40px;
+  height: 40px;
   margin-bottom: 10px;
 }
 
+/* Heading dalam kartu */
+.heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Jumlah dalam kartu */
 .count {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
+/* About Us section */
+.aboutUs {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+/* Judul utama About Us */
+.mainHeading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f7f7f7;
+}
+
+/* Kontainer teks dan gambar dalam About Us */
+.textImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+/* Kontainer teks dalam About Us */
+.textContainer {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+  color: #333333;
+}
+
+/* Kontainer gambar dalam About Us */
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+}
+
+/* Teks tambahan dalam About Us */
+.subHeading {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f7f7f7;
+}
+
+/* Mengatur orientasi gambar dan teks */
+.textImageContainer.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Footer */
 .footer {
-  background-color: #57211C;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
+  background-color: #57211C; /* Warna background footer */
+  color: white; /* Warna teks footer */
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
