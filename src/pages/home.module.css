@@ -8,7 +8,7 @@
 /* Main section */
 .main {
   background-color: #57211C; /* Warna background utama */
-  color: white; /* Warna teks default */
+  color: rgb(192, 192, 192); /* Warna teks default */
   padding: 20px;
   border-radius: 10px; /* Tambahkan border-radius untuk efek rounded */
 }
@@ -20,192 +20,204 @@
   align-items: center;
 }
 
-/* Teks Section */
+/* Text section */
 .textSection {
   flex: 1;
-  padding-right: 20px; /* Adjust space between text and image */
+  padding-right: 20px;
 }
 
-/* Gambar Section */
-.imageSection {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-/* Gambar dengan sudut melengkung */
-img {
-  border-radius: 10px; /* Membuat gambar memiliki sudut yang melengkung */
-  margin-bottom: 20px;
-}
-
-.image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 15px;
-  display: block; /* Pastikan gambar tidak diperlakukan sebagai inline element */
-}
-
-/* Judul */
+/* Title */
 .title {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #DDDDDD;
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Paragraf */
+/* Paragraph */
 .paragraph {
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 1.6;
   margin-bottom: 20px;
-  color: #F7F7F7;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: justify;
 }
 
-/* Container tombol */
+/* Button container */
 .buttonContainer {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
-/* Tombol Tentang Kami */
-.btnTentang {
-  display: inline-block;
+/* Button styles */
+.btnTentang,
+.btnSecondary {
   background-color: #901100;
-  color: #FFFFFF;
+  color: #cccccc;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   text-decoration: none;
   font-size: 16px;
-  text-align: center;
-  transition: background-color 0.3s ease;
-  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-/* Tombol secondary */
+.btnTentang:hover {
+  background-color: #880101;
+}
+
 .btnSecondary {
-  display: inline-block;
-  color: #f7f7f7;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
+  background-color: #57211C; /* Warna background button sekunder */
+  color: #cccccc; /* Warna teks button sekunder */
 }
 
-/* Arahkan panah pada tombol */
 .arrowRight {
-  margin-left: 8px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
   display: inline-block;
+  margin-left: 10px;
+  border: solid #cccccc;
+  border-width: 0 2px 2px 0;
   padding: 3px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
 
-/* Section */
-.section {
-  margin: 40px 0;
+/* Image section */
+.imageSection {
+  flex: 1;
 }
 
-/* Flex container untuk kartu */
+.image {
+  max-width: 100%;
+  border-radius: 10px; /* Tambahkan border-radius untuk efek rounded */
+}
+
+/* Section styles */
+.section {
+  margin-top: 50px;
+}
+
+/* Flex container */
 .flexContainer {
   display: flex;
-  gap: 20px;
   justify-content: space-around;
 }
 
-/* Kartu */
+/* Card styles */
 .card {
-  background: #FFF;
-  color: #333;
+  background-color: #cccccc;
+  color: #272727;
   padding: 20px;
-  border-radius: 10px;
-  width: 30%;
+  border-radius: 10px; /* Tambahkan border-radius untuk efek rounded */
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  flex: 1;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Ikon dalam kartu */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin-bottom: 10px;
 }
 
-/* Heading dalam kartu */
 .heading {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* Jumlah dalam kartu */
 .count {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
 }
 
 /* About Us section */
 .aboutUs {
-  margin-top: 60px;
-  padding: 20px;
+  margin-top: 50px;
 }
 
-/* Judul utama About Us */
 .mainHeading {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #f7f7f7;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Kontainer teks dan gambar dalam About Us */
 .textImageContainer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-/* Kontainer teks dalam About Us */
 .textContainer {
   flex: 1;
-  padding: 20px;
-  max-width: 50%;
-  color: #333333;
+  padding-right: 20px;
 }
 
-/* Kontainer gambar dalam About Us */
+.subHeading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
 .imageContainer {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  max-width: 50%;
 }
 
-/* Teks tambahan dalam About Us */
-.subHeading {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #f7f7f7;
+.image {
+  max-width: 100%;
+  border-radius: 10px;
 }
 
-/* Mengatur orientasi gambar dan teks */
-.textImageContainer.reverse {
+.reverse {
   flex-direction: row-reverse;
 }
 
-/* Footer */
+/* Footer styles */
 .footer {
-  padding: 20px;
+  background-color: #cccccc;
+  color: rgb(40, 40, 40);
   text-align: center;
-  background-color: #57211C; /* Warna background footer */
-  color: white; /* Warna teks footer */
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px; /* Tambahkan border-radius untuk efek rounded */
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+/* Sponsor Section */
+.sponsorSection {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.sponsorContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.sponsorSlide {
+  display: flex;
+  animation: slide 20s linear infinite;
+}
+
+.sponsorImage {
+  height: 100px;
+  margin: 10px;
+  padding: 20px; /* Adding padding for dark box effect */
+  background-color: #cccccc; /* Dark box effect */
+  border-radius: 10px; /* Rounded corners for dark box */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

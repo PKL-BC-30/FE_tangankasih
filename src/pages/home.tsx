@@ -3,6 +3,10 @@ import styles from './home.module.css';
 import homeimg from '/public/pages-img/tentangkami-1.png';
 import tentangkami1 from '/public/pages-img/tentangkami-1.png';
 import tentangkami2 from '/public/pages-img/donasi-5.png';
+import sponsor1 from '/public/pages-img/sponsor-1.png';
+import sponsor2 from '/public/pages-img/sponsor-2.png';
+import sponsor3 from '/public/pages-img/sponsor-3.png';
+import sponsor4 from '/public/pages-img/sponsor-4.png';
 
 const Home: Component = () => {
   onMount(() => {
@@ -26,9 +30,9 @@ const Home: Component = () => {
             <h1 class={styles.title}>Platform Donasi Digital Terbaik se-Banyumas Raya</h1>
             <p class={styles.paragraph}>Kami telah membantu banyak kelompok orang atau negara yang tertindas dan berhasil menyalurkan banyak manfaat untuk mereka</p>
             <div class={styles.buttonContainer}>
-              <a href="#about-us" id="tentang-link" class={styles.btnTentang}>Tentang Kami</a>
+              <a href="/donasi" class={styles.btnTentang}>Donasi Sekarang</a>
               <a href="/blog" class={styles.btnSecondary}>
-                Trending Cause
+                Kasus Tren
                 <span class={styles.arrowRight}></span>
               </a>
             </div>
@@ -65,8 +69,25 @@ const Home: Component = () => {
           </div>
         </section>
 
+        <section class={styles.sponsorSection}>
+          <h2 class={styles.subHeading}>Didukung Oleh :</h2>
+          <div class={styles.sponsorContainer}>
+            <div class={styles.sponsorSlide}>
+              <img src={sponsor1} alt="Sponsor-1" class={styles.sponsorImage} />
+              <img src={sponsor2} alt="Sponsor-2" class={styles.sponsorImage} />
+              <img src={sponsor3} alt="Sponsor-3" class={styles.sponsorImage} />
+              <img src={sponsor4} alt="Sponsor-4" class={styles.sponsorImage} />
+              {/* Duplicate images for continuous sliding effect */}
+              <img src={sponsor1} alt="Sponsor-1" class={styles.sponsorImage} />
+              <img src={sponsor2} alt="Sponsor-2" class={styles.sponsorImage} />
+              <img src={sponsor3} alt="Sponsor-3" class={styles.sponsorImage} />
+              <img src={sponsor4} alt="Sponsor-4" class={styles.sponsorImage} />
+            </div>
+          </div>
+        </section>
+
         <section id="about-us" class={styles.aboutUs}>
-          <h1 class={styles.mainHeading}>Tentang Kami</h1>
+          <h1 class={styles.mainHeading}>TanganKasih</h1>
           
           <div class={styles.textImageContainer}>
             <div class={styles.textContainer}>
@@ -87,7 +108,7 @@ const Home: Component = () => {
 
           <div class={`${styles.textImageContainer} ${styles.reverse}`}>
             <div class={styles.textContainer}>
-              <h2 class={styles.subHeading}>Misi Kami</h2>
+              <h2 class={styles.subHeading}>Misi TanganKasih</h2>
               <p class={styles.paragraph}>
                 Kami di Tangankasih sangat mengutamakan transparansi. Setiap donasi yang
                 masuk dan keluar dapat dilacak dengan mudah, memberikan kepercayaan
@@ -104,7 +125,7 @@ const Home: Component = () => {
 
           <div class={styles.textImageContainer}>
             <div class={styles.textContainer}>
-              <h2 class={styles.subHeading}>Filosofi Kami</h2>
+              <h2 class={styles.subHeading}>Filosofi TanganKasih</h2>
               <p class={styles.paragraph}>
                 Tangankasih berkomitmen untuk meningkatkan kesadaran masyarakat
                 mengenai kondisi mereka yang kurang beruntung. Melalui berbagai kampanye
