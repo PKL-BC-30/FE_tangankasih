@@ -141,7 +141,7 @@ const Home: Component = () => {
           </div>
         </section>
 
-        <footer class={styles.footer}>
+        <footer class={styles.footerHome}>
           <div class={styles.container}>
             <p>&copy; 2023 Tangan Kasih. All rights reserved.</p>
           </div>
