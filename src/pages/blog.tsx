@@ -58,15 +58,15 @@ const Blog = () => {
       <main>
         <section class="hero">
           <div class="hero-content">
-            <h2>Donasi</h2>
+            <h2>Berita Kampanye</h2>
             <h1>Penggalangan Dana</h1>
           </div>
           <div class="hero-image">
-            <img src={blogbg} alt="Coins" />
+            <img src={blogbg} alt="Coins" class="hero-img" />
           </div>
         </section>
-        <section class="events">
-          <h2>Kegiatan-kegiatan mendatang :</h2>
+        <section class="events-blog">
+          <h2>Trending Baru Ini :</h2>
           <div class="events-grid">
             {events.map((event) => (
               <Link href={event.link} class="event-card-link">

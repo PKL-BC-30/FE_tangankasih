@@ -10,29 +10,59 @@
 }
 
 .btn-donate {
-  background-color: #ff9900;
+  background-color: #8B4513;
   border: none;
   color: white;
   padding: 10px 20px;
-  border-radius: 20px; /* Membuat tombol sedikit melingkar */
-  transition: background-color 0.3s ease; /* Efek transisi perubahan warna latar */
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
 }
 
 .btn-donate:hover {
-  background-color: #e68a00; /* Warna latar saat tombol dihover */
+  background-color: #A0522D; 
 }
 
 .hero {
-  background-color: #000;
   color: white;
   padding: 100px 0;
-  background-image: url("https://images.unsplash.com/photo-1596722195395-7304449a18b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80");
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.hero-content {
+.hero-content-donate {
+  position: relative;
   text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.hero-image-donate {
+  width: 100%;
+  max-height: 360px;
+  opacity: 0.8; /* Membuat gambar sedikit transparan */
+}
+
+.hero-text-donate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text-donate h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hero-text-donate h1 {
+  font-size: 48px;
+  font-weight: bold;
 }
 
 .causes {
@@ -41,41 +71,39 @@
 
 .causes-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Mengubah menjadi 3 kolom */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 20px;
 }
 
 @media (max-width: 900px) {
   .causes-grid {
-    grid-template-columns: repeat(2, 1fr); /* Kembali ke 2 kolom pada layar lebih kecil */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 600px) {
   .causes-grid {
-    grid-template-columns: 1fr; /* Satu kolom pada layar sangat kecil */
+    grid-template-columns: 1fr; 
   }
 }
 
 .cause-card {
   background-color: white;
-  border-radius: 15px; /* Membuat kartu sedikit melingkar */
+  border-radius: 5px; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
-  margin-bottom: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .cause-card:hover {
-  transform: translateY(-5px); /* Efek mengangkat kartu saat dihover */
+  transform: translateY(-5px); 
 }
 
 .cause-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
 }
 
 .cause-content {

@@ -7,6 +7,7 @@ import donasi3 from '/public/pages-img/donasi-3.png';
 import donasi4 from '/public/pages-img/donasi-4.png';
 import donasi5 from '/public/pages-img/donasi-5.png';
 import donasi6 from '/public/pages-img/donasi-6.png';
+import thumbnail from '/public/pages-img/thumbnail-1.png';
 
 const App: Component = () => {
   return (
@@ -14,9 +15,12 @@ const App: Component = () => {
       <main>
         <section class="hero">
           <div class="container">
-            <div class="hero-content">
-              <h2>Donasi</h2>
-              <h1>Kasus-kasus</h1>
+            <div class="hero-content-donate">
+              <img src={thumbnail} alt="Coin in Palms" class="hero-image-donate" />
+              <div class="hero-text-donate">
+                <h2>Donasi</h2>
+                <h1>Kasus-kasus Kami</h1>
+              </div>
             </div>
           </div>
         </section>
@@ -28,15 +32,15 @@ const App: Component = () => {
                 <div class="cause-content">
                   <h3>Big charity: Tablet for Kirimo sec school</h3>
                   <p>Donation: 5,000/1,200,000</p>
-                  <Link href="/donasi-page" class="btn-donate">Donasi</Link>
+                  <Link href="/donasi-page" class="btn-donate">Donate</Link>
                 </div>
               </div>
               <div class="cause-card">
                 <img src={donasi2} alt="Girl in Yellow Shirt" />
                 <div class="cause-content">
                   <h3>Anna Mbelo. Laptop charity</h3>
-                  <p>Donation : 5,000/102,000</p>
-                  <Link href="/donasi-page" class="btn-donate">Donasi</Link>
+                  <p>Donation: 5,000/102,000</p>
+                  <Link href="/donasi-page" class="btn-donate">Donate</Link>
                 </div>
               </div>
               <div class="cause-card">
@@ -44,7 +48,7 @@ const App: Component = () => {
                 <div class="cause-content">
                   <h3>Helping the girls During the Holidays</h3>
                   <p>Donation: 5,000/2012,000</p>
-                  <Link href="/donasi-page" class="btn-donate">Donasi</Link>
+                  <Link href="/donasi-page" class="btn-donate">Donate</Link>
                 </div>
               </div>
               <div class="cause-card">
@@ -52,7 +56,7 @@ const App: Component = () => {
                 <div class="cause-content">
                   <h3>Providing access to digital devices at Mkurumbenge School</h3>
                   <p>Donation: 7,000/882,000</p>
-                  <Link href="/donasi-page" class="btn-donate">Donasi</Link>
+                  <Link href="/donasi-page" class="btn-donate">Donate</Link>
                 </div>
               </div>
               <div class="cause-card">
@@ -60,7 +64,7 @@ const App: Component = () => {
                 <div class="cause-content">
                   <h3>Welu Mwilo a girl from Iringa</h3>
                   <p>Donation: 5,000/712,000</p>
-                  <Link href="/donasi-page" class="btn-donate">Donasi</Link>
+                  <Link href="/donasi-page" class="btn-donate">Donate</Link>
                 </div>
               </div>
               <div class="cause-card">
@@ -68,7 +72,7 @@ const App: Component = () => {
                 <div class="cause-content">
                   <h3>Big charity: donate laptops to school for poor children</h3>
                   <p>Donation: 5,000/9912,000</p>
-                  <Link href="/donasi-page" class="btn-donate">Donasi</Link>
+                  <Link href="/donasi-page" class="btn-donate">Donate</Link>
                 </div>
               </div>
             </div>
@@ -77,7 +81,7 @@ const App: Component = () => {
       </main>
       <footer>
         <div class="container">
-          <p>Copyright &copy; 2023 Tangan Kasih. All rights reserved.</p>
+          <p>&copy; 2023 Tangan Kasih. All rights reserved.</p>
         </div>
       </footer>
     </div>
